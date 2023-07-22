@@ -16,7 +16,6 @@ body{
   outline-offset: 3px;
 }
 
-
 .container{
   width: 100%;
   max-width: 1140px;
@@ -54,7 +53,6 @@ body{
 .logo-link img{
   display: block;
 }
-
 
 .site-header-actions{
   display: flex;
@@ -105,7 +103,6 @@ body{
   color: #fff;
   background-color: #FF7500;
   text-decoration: none;
-  transition: opacity 0.4s ease;
   padding: 12px 24px;
   border-radius: 4px;
   font-weight: bold;
@@ -130,6 +127,7 @@ body{
 }
 
 .hero-container{
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -162,6 +160,9 @@ body{
 }
 
 .hero-img{
+  position: absolute;
+  top: -40px;
+  right: 20px;
   width: 510px;
   height: 510px;
   border-radius: 8px;
@@ -171,10 +172,10 @@ body{
 
 /* FEATURES */
 
-.features{
-  padding-top: 210px;
-  padding-bottom: 210px;
-}
+  .features{
+    padding-top: 210px;
+    padding-bottom: 210px;
+  }
 
 
 .features-heading{
@@ -199,6 +200,7 @@ body{
   width: 340px;
   margin-right: 40px;
 }
+
 .feature:last-child{
   margin-right: 0;
 }
@@ -227,21 +229,21 @@ body{
 }
 
 
-
 /* PROMO */
 .promo{
- padding-top: 120px;
- padding-bottom: 160px;
+  padding-top: 120px;
+  padding-bottom: 160px;
 }
 
 .promo-inner{
+  position: relative;
   background-color: #000;
-border-radius: 12px;
-padding: 64px;
-color: #fff;
-display: flex;
-justify-content: space-between;
-align-items: center;
+  border-radius: 12px;
+  padding: 64px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 
@@ -258,8 +260,9 @@ align-items: center;
 }
 
 .promo-info-wrapper{
- margin-bottom: 24px;
+  margin-bottom: 24px;
 }
+
 
 .promo-text{
   margin-top: 0;
@@ -276,6 +279,9 @@ align-items: center;
 }
 
 .promo-img{
+  position: absolute;
+  right: 64px;
+  bottom: 64px;
   width: 440px;
   height: 440px;
   object-fit: cover;
@@ -355,7 +361,7 @@ align-items: center;
 .site-footer-links li {
   margin-bottom: 16px;
 }
-.site-footer-links:last-child{
+.site-footer-links li:last-child{
   margin-bottom: 0;
 }
 
